@@ -18,10 +18,10 @@ function Footer() {
           </div>
           <p className="text-sm leading-relaxed text-neutral-400 max-w-md">
             {" "}
-            IronClad Solutions LLC is a licensed representative of various life
-            insurance and financial service providers. All strategies are for
-            educational purposes and do not constitute financial advice.
-            Licensing and availability vary by state.
+            Augie Bowdry is a licensed representative of various life insurance
+            and financial service providers. All strategies are for educational
+            purposes and do not constitute financial advice. Licensing and
+            availability vary by state.
           </p>
         </div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left flex-1 min-w-[200px]">

@@ -29,7 +29,7 @@ function Unsubscribe() {
     const form = event.currentTarget;
     const formData = new FormData(form);
     const name = formData.get("name");
-    const subject = `User Opted Out: ${name} Unsubscribed from IronClad Solutions LLC`;
+    const subject = `User Opted Out: ${name} Unsubscribed from Augie Bowdry`;
     formData.append("subject", subject);
 
     formData.append(
@@ -62,7 +62,7 @@ function Unsubscribe() {
     <div className="bg-neutral-50 p-8 rounded-lg shadow-xl w-full md:w-[40%] z-1 mx-auto my-12">
       <div className="flex flex-col text-center md:text-left">
         <p className="text-lg font-semibold pb-4">
-          Unsubscribe from IronClad Solutions LLC
+          Unsubscribe from Augie Bowdry
         </p>
 
         <p className="text-lg font-light">
@@ -115,7 +115,7 @@ function Unsubscribe() {
 
       <p className="text-xs sm:text-sm mt-6">
         You are receiving this message because you opted in to receive
-        communications from IronClad Solutions LLC.
+        communications from Augie Bowdry.
         <br />
         <Link to="/privacy" className="text-[#2773a6] hover:underline">
           Privacy Policy
@@ -126,7 +126,7 @@ function Unsubscribe() {
         </Link>
         <br />
         <br />
-        IronClad Solutions LLC, United States of America
+        Augie Bowdry, United States of America
       </p>
     </div>
   );

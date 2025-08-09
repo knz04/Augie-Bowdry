@@ -21,7 +21,7 @@ function PrivacyPolicy() {
   return (
     <div className="bg-neutral-50 w-full ">
       <div className="flex flex-col w-[90%] md:w-[80%] lg:w-[70%] max-w-4xl mx-auto py-12 md:py-16">
-        <h1 className="font-bold">Privacy Policy for Ironclad Solutions LLC</h1>
+        <h1 className="font-bold">Privacy Policy for Augie Bowdry</h1>
 
         <div className="flex flex-col gap-y-6 md:gap-y-8">
           <p className="text-sm text-neutral-600 leading-relaxed mb-2">
@@ -95,7 +95,7 @@ function PrivacyPolicy() {
               </li>
               <li>
                 Authorized associates, consultants, and representatives working
-                with or on behalf of Ironclad Solutions LLC
+                with or on behalf of Augie Bowdry
               </li>
               <li>
                 Third-party service providers such as marketing platforms,
@@ -169,7 +169,7 @@ function PrivacyPolicy() {
               <li className="mt-8">Contact Us</li>
             </strong>
             <ul>
-              <li>Ironclad Solutions LLC – Privacy Team</li>
+              <li>Augie Bowdry – Privacy Team</li>
               <li>
                 Email:{" "}
                 <Link

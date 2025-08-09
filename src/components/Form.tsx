@@ -29,7 +29,7 @@ function Form() {
     const form = event.currentTarget;
     const formData = new FormData(form);
     const name = formData.get("name");
-    const subject = `New Subscription: ${name} subscribed to updates from IronClad Solutions LLC.`;
+    const subject = `New Subscription: ${name} subscribed to updates from Augie Bowdry.`;
     formData.append("subject", subject);
 
     formData.append(
@@ -62,12 +62,12 @@ function Form() {
     <div className="bg-neutral-50 p-8 rounded-lg shadow-xl w-full md:w-[40%] z-1">
       <div className="flex flex-col text-center md:text-left">
         <p className="text-lg font-semibold pb-4">
-          Stay Connected with IronClad Solutions LLC
+          Stay Connected with Augie Bowdry
         </p>
 
         <p className="text-lg font-light">
           Fill out the form below to receive updates, promotions, and
-          opportunities from IronClad Solutions LLC and our trusted partners.
+          opportunities from Augie Bowdry and our trusted partners.
         </p>
         <br />
       </div>
@@ -114,8 +114,8 @@ function Form() {
             className="mr-3 mt-1 accent-[#2773a6] transform scale-125"
           />
           I agree to receive marketing communications via phone call, text
-          message, and email from IronClad Solutions LLC and its affiliates. I
-          understand that consent is not a condition of purchase.
+          message, and email from Augie Bowdry and its affiliates. I understand
+          that consent is not a condition of purchase.
         </label>
 
         <button
@@ -129,7 +129,7 @@ function Form() {
       <p className="text-xs sm:text-sm">
         <br />
         You are receiving this message because you opted in to receive
-        communications from IronClad Solutions LLC.
+        communications from Augie Bowdry.
         <br />
         <Link to="/privacy" className="text-[#2773a6] hover:underline">
           Privacy Policy
@@ -140,7 +140,7 @@ function Form() {
         </Link>
         <br />
         <br />
-        IronClad Solutions LLC, United States of America
+        Augie Bowdry, United States of America
       </p>
     </div>
   );
