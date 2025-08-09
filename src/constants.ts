@@ -1,7 +1,4 @@
-import andre from "./assets/andre-scroggie.jpeg";
 import augie from "./assets/augie-bowdry.jpeg";
-import kevin from "./assets/kevin-caballero.jpeg";
-import sean from "./assets/sean-spengler.jpeg";
 
 interface Team {
   id: string;
