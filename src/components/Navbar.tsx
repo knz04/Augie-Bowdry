@@ -11,8 +11,8 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full bg-neutral-950">
-      <div className="relative flex items-center mx-auto w-full md:w-[90%] py-4 md:py-0 h-20 md:h-24">
+    <div className="w-full bg-neutral-50">
+      <div className="relative flex items-center mx-auto w-full md:w-[90%] py-4 md:py-0 h-24 md:h-28">
         <div className="md:hidden absolute left-0 top-1/2 -translate-y-1/2 ml-4 z-20">
           <button
             onClick={toggleMenu}
@@ -32,14 +32,14 @@ function Navbar() {
         <div className="flex flex-1 justify-center md:justify-between items-center mx-auto w-[90%] ">
           <div className="flex gap-x-6 items-center">
             <NavLink to="/">
-              <img src={icon} alt="Logo" className="h-15" />
+              <img src={icon} alt="Logo" className="h-35" />
             </NavLink>
-            <p className="hidden md:flex text-xl font-bold text-neutral-50">
+            <p className="hidden md:flex text-xl font-bold text-neutral-950">
               <NavLink to="/">Augie Bowdry</NavLink>
             </p>
           </div>
           <nav className="hidden md:block">
-            <ul className=" text-lg flex gap-x-6 items-center text-neutral-50">
+            <ul className=" text-lg flex gap-x-6 items-center text-neutral-950">
               <li className="hover:underline hover:underline-offset-8 font-light">
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -51,8 +51,8 @@ function Navbar() {
         </div>
 
         {isMenuOpen && (
-          <nav className="md:hidden absolute top-full left-0 right-0 w-full bg-neutral-950 shadow-lg z-20 py-4">
-            <ul className="text-lg flex flex-col items-center text-neutral-50">
+          <nav className="md:hidden absolute top-full left-0 right-0 w-full bg-neutral-50 shadow-lg z-20 py-4">
+            <ul className="text-lg flex flex-col items-center text-neutral-950">
               <li className="hover:bg-neutral-900 w-full text-start font-light p-4">
                 <NavLink to="/" onClick={toggleMenu}>
                   Home
