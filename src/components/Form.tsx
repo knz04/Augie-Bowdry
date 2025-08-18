@@ -59,7 +59,7 @@ function Form() {
   };
 
   return (
-    <div className="bg-neutral-50 p-8 rounded-lg shadow-xl w-full md:w-[40%] z-1">
+    <div className="bg-neutral-50 p-8 shadow-xl w-full md:w-[40%] z-1">
       <div className="flex flex-col text-center md:text-left">
         <p className="text-lg font-semibold pb-4">
           Stay Connected with Augie Bowdry
@@ -120,7 +120,7 @@ function Form() {
 
         <button
           type="submit"
-          className="bg-[#2773a6] hover:bg-[#28679a] text-neutral-50 font-bold py-3 px-6 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mt-4"
+          className="bg-sky-600 hover:bg-neutral-50 text-neutral-50 hover:text-sky-600 hover:cursor-pointer font-bold py-3 px-6 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mt-4"
         >
           Submit
         </button>
@@ -131,11 +131,11 @@ function Form() {
         You are receiving this message because you opted in to receive
         communications from Augie Bowdry.
         <br />
-        <Link to="/privacy" className="text-[#2773a6] hover:underline">
+        <Link to="/privacy" className="text-sky-600 hover:underline">
           Privacy Policy
         </Link>{" "}
         |{" "}
-        <Link to="/unsubscribe" className="text-[#2773a6] hover:underline">
+        <Link to="/unsubscribe" className="text-sky-600 hover:underline">
           Unsubscribe
         </Link>
         <br />
