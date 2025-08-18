@@ -60,13 +60,13 @@ function FiveFs() {
   return (
     <div className="lg:h-[120vh] 2xl:h-[70vh] bg-linear-to-b bg-neutral-50 py-8">
       <div className="flex flex-col justify-center items-center py-12">
-        <p className="text-2xl md:text-4xl font-semibold text-sky-700 pb-2">
+        <p className="text-2xl md:text-4xl font-semibold text-sky-600 pb-2">
           How We Can Help
         </p>
         <p className="text-base md:text-xl text-center font-light text-neutral-950">
           Financial strategy and mentorship grounded in the Five Fs:
         </p>
-        <p className="text-base md:text-xl text-center text-sky-700 font-bold">
+        <p className="text-base md:text-xl text-center text-sky-600 font-bold">
           Faith, Family, Finance, Fitness, and Fun
         </p>
       </div>
@@ -79,16 +79,16 @@ function FiveFs() {
             <div className="self-center py-2">
               <item.icon color="#0369a1" className="self-center w-12 h-12" />
             </div>
-            <p className="text-xl md:text-2xl/6 text-center font-semibold text-sky-700 px-6 py-2">
+            <p className="text-xl md:text-2xl/6 text-center font-semibold text-sky-600 px-6 py-2">
               {item.title}
             </p>
             <p className="text-md md:text-lg text-center text-neutral-950 px-4 py-3">
               {item.subtitle}
             </p>
 
-            <button className="bg-sky-700 py-3 px-4 self-center hover:cursor-pointer hover:bg-neutral-50 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
+            <button className="bg-sky-600 py-3 px-4 self-center hover:cursor-pointer hover:bg-neutral-50 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
               <Link to={item.link} target="_blank">
-                <p className="text-sm text-center italic text-neutral-50 hover:text-sky-700 ">
+                <p className="text-sm text-center italic text-neutral-50 hover:text-sky-600 ">
                   → {item.button}
                 </p>
               </Link>
