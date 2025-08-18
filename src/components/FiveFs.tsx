@@ -86,13 +86,13 @@ function FiveFs() {
               {item.subtitle}
             </p>
 
-            <button className="bg-sky-600 py-3 px-4 self-center hover:cursor-pointer hover:bg-neutral-50 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
-              <Link to={item.link} target="_blank">
-                <p className="text-sm text-center italic text-neutral-50 hover:text-sky-600 ">
-                  → {item.button}
-                </p>
-              </Link>
-            </button>
+            <Link
+              to={item.link}
+              target="_blank"
+              className="text-sm text-center italic text-neutral-50 hover:text-sky-600 bg-sky-600 py-3 px-4 self-center hover:cursor-pointer hover:bg-neutral-50 shadow-md transition-all duration-300 ease-in-out transform hover:scale-105"
+            >
+              → {item.button}
+            </Link>
           </div>
         ))}
       </div>
