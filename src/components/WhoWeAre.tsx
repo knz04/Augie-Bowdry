@@ -1,40 +1,67 @@
 import { team } from "../constants";
 import { Link } from "react-router-dom";
+import profile from "../assets/profile.jpeg";
+import { Mail, Phone } from "lucide-react";
 
 function WhoWeAre() {
   return (
-    <div className="lg:h-screen 2xl:h-[70vh] bg-linear-to-b from-[#555759] to-neutral-900">
-      <div className="flex flex-col justify-center items-center py-10">
-        <p className="text-2xl md:text-4xl font-semibold text-neutral-50 pb-2">
-          Who We Are
+    <div className="flex flex-col md:flex-row justify-center items-center py-10 px-4 md:px-8 lg:h-screen 2xl:h-[70vh] bg-neutral-50">
+      <div className="flex flex-col justify-center w-full md:w-1/2 p-4 md:p-8">
+        <p className="text-2xl md:text-4xl font-semibold text-sky-600 pb-2">
+          Who I Am
         </p>
-        <p className="text-base md:text-xl font-light text-neutral-50">
-          Meet the dedicated professionals behind our success.
+        <p className="text-base md:text-xl font-light text-neutral-950">
+          I'm Agustin Bowdry, a purpose-driven entrepreneur committed to
+          building a life that aligns with faith, family, and legacy.
+          <br />
+          <br />
+          After more than a decade in the mortgage and financial world, I
+          realized I wasn't just here to build transactions–I was here to build
+          people.
+          <br />
+          <br />
+          Today, I help individuals and leaders grow purpose-filled lives and
+          businesses that unlock time, income, and freedom–without sacrificing
+          what matters most. My life is built around the Five Fs: Faith, Family,
+          Finance, Fitness, and Fun.
+          <br />
+          <br />I help others align their lives and decisions around those
+          values so they can lead boldly, provide fully, and live freely.
         </p>
       </div>
-      <div className="grid gap-y-12 md:gap-y-20 lg:gap-y-0 md:grid-cols-2 lg:grid-cols-4 py-8">
-        {team.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col justify-center items-center"
-          >
-            <Link to={`/contact#${item.id}`}>
-              <div
-                className={`w-56 h-56 md:w-60 md:h-60 rounded-full mb-4 bg-cover bg-center bg-no-repeat shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-115`}
-                style={{
-                  backgroundImage: `url('${item.profile}')`,
-                }}
-              />
-            </Link>
-            <Link
-              to={`/contact#${item.id}`}
-              className="hover:text-[#2773a6] hover:underline transition text-base md:text-xl font-light text-neutral-50 pt-2"
-            >
-              {item.name}
-            </Link>
+
+      <Link
+        to="/contact"
+        className="flex flex-col items-center w-full md:w-1/2 bg-white border border-neutral-100  shadow-sm md:flex-row md:max-w-xl hover:bg-neutral-200 hover:cursor-pointer mt-8 md:mt-0"
+      >
+        <img
+          className="object-cover w-full h-auto  md:h-full md:w-48 "
+          src={profile}
+          alt="Agustin Bowdry"
+        />
+        <div className="flex flex-col justify-between p-4 leading-normal">
+          <h5 className="text-center md:text-start text-2xl font-bold tracking-tight text-neutral-950 ">
+            Agustin Bowdry
+          </h5>
+          <p className="text-center md:text-start mb-2">
+            CEO of Project Me Ventures
+          </p>
+          <div className="flex flex-col">
+            <div className="flex">
+              <Phone color="#374151" className="mr-2" />
+              <p className="text-center md:text-start font-normal text-gray-700">
+                415-894-2790
+              </p>
+            </div>
+            <div className="flex">
+              <Mail color="#374151" className="mr-2" />
+              <p className="text-center md:text-start mb-3 font-normal text-gray-700 ">
+                agustinbowdry@gmail.com
+              </p>
+            </div>
           </div>
-        ))}
-      </div>
+        </div>
+      </Link>
     </div>
   );
 }

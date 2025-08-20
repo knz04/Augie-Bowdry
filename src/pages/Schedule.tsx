@@ -34,7 +34,7 @@ function Schedule() {
           Schedule a meeting with out dedicated professionals.
         </p>
 
-        <div className="w-full max-w-4xl bg-neutral-50 h-fit py-8 px-4 sm:px-6 md:px-8 lg:px-10 rounded-lg shadow-2xl mt-8">
+        <div className="w-full max-w-4xl bg-neutral-50 h-fit py-8 px-4 sm:px-6 md:px-8 lg:px-10 shadow-2xl mt-8">
           {team.map((item, index) => (
             <div
               key={index}

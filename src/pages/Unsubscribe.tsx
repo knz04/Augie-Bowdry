@@ -29,7 +29,7 @@ function Unsubscribe() {
     const form = event.currentTarget;
     const formData = new FormData(form);
     const name = formData.get("name");
-    const subject = `User Opted Out: ${name} Unsubscribed from Augie Bowdry`;
+    const subject = `User Opted Out: ${name} Unsubscribed from Agustin Bowdry`;
     formData.append("subject", subject);
 
     formData.append(
@@ -59,10 +59,10 @@ function Unsubscribe() {
   };
 
   return (
-    <div className="bg-neutral-50 p-8 rounded-lg shadow-xl w-full md:w-[40%] z-1 mx-auto my-12">
+    <div className="bg-neutral-50 p-8  shadow-xl w-full md:w-[40%] z-1 mx-auto my-12">
       <div className="flex flex-col text-center md:text-left">
         <p className="text-lg font-semibold pb-4">
-          Unsubscribe from Augie Bowdry
+          Unsubscribe from Agustin Bowdry
         </p>
 
         <p className="text-lg font-light">
@@ -106,7 +106,7 @@ function Unsubscribe() {
 
         <button
           type="submit"
-          className="bg-[#2773a6] hover:bg-[#28679a] text-neutral-50 font-bold py-3 px-6 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mt-4"
+          className="bg-sky-600 hover:bg-neutral-50 text-neutral-50 hover:text-sky-600 hover:cursor-pointer font-bold py-3 px-6 shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 mt-4"
         >
           Unsubscribe
         </button>
@@ -115,18 +115,18 @@ function Unsubscribe() {
 
       <p className="text-xs sm:text-sm mt-6">
         You are receiving this message because you opted in to receive
-        communications from Augie Bowdry.
+        communications from Agustin Bowdry.
         <br />
-        <Link to="/privacy" className="text-[#2773a6] hover:underline">
+        <Link to="/privacy" className="text-sky-600 hover:underline">
           Privacy Policy
         </Link>{" "}
         |{" "}
-        <Link to="/unsubscribe" className="text-[#2773a6] hover:underline">
+        <Link to="/unsubscribe" className="text-sky-600 hover:underline">
           Unsubscribe
         </Link>
         <br />
         <br />
-        Augie Bowdry, United States of America
+        Agustin Bowdry, United States of America
       </p>
     </div>
   );

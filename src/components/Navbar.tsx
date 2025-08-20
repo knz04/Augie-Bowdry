@@ -35,7 +35,7 @@ function Navbar() {
               <img src={icon} alt="Logo" className="h-35" />
             </NavLink>
             <p className="hidden md:flex text-xl font-bold text-neutral-950">
-              <NavLink to="/">Augie Bowdry</NavLink>
+              <NavLink to="/">Agustin Bowdry</NavLink>
             </p>
           </div>
           <nav className="hidden md:block">
