@@ -1,16 +1,15 @@
-import { team } from "../constants";
 import { Link } from "react-router-dom";
 import profile from "../assets/profile.jpeg";
 import { Mail, Phone } from "lucide-react";
 
 function WhoWeAre() {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center py-10 px-4 md:px-8 lg:h-screen 2xl:h-[70vh] bg-neutral-50">
+    <div className="flex flex-col md:flex-row justify-center items-center py-10 px-4 md:px-8 md:h-[50vh] lg:h-screen 2xl:h-[70vh] bg-neutral-50">
       <div className="flex flex-col justify-center w-full md:w-1/2 p-4 md:p-8">
         <p className="text-2xl md:text-4xl font-semibold text-sky-600 pb-2">
           Who I Am
         </p>
-        <p className="text-base md:text-xl font-light text-neutral-950">
+        <p className="text-base md:text-xl font-light text-neutral-950 lg:pr-16">
           I'm Agustin Bowdry, a purpose-driven entrepreneur committed to
           building a life that aligns with faith, family, and legacy.
           <br />
